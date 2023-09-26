@@ -8,7 +8,7 @@
 classname = "F5 Networks Japan Technical Information"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_url = "https://github.com/ttsuji777/f5os-api-dev.git"
+github_url = "https://github.com/https://github.com/BeF5/f5j-easy-setup-ltm-17.git"
 
 git_branch_name = 'main'
 
@@ -256,7 +256,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, '%s.tex' % cleanname, u'%s Documentation' % classname,
-     u'F5 Networks, Inc.', 'manual', True),
+     u'F5, Inc.', 'manual', True),
 ]
 
 # -- Options for manual page output ---------------------------------------
