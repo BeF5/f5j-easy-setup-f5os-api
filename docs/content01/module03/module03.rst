@@ -45,7 +45,7 @@ APIアクセストークンの取得
 
 .. code-block:: bash
 
-   $ F5OS_TOKEN=`curl -sk -u admin:$F5OS_PASSWORD -o /dev/null -I https://$APPLIANCE_IP/api/data/openconfig-system:system/aaa -w '%header{X-Auth-Token}\n'`
+   $ F5OS_TOKEN=`curl -sk -u admin:$F5OS_PASSWORD -I https://$APPLIANCE_IP/api/data/openconfig-system:system/aaa | grep X-Auth-Token | awk '{print $2}'`
 
 
 - 以下のコマンドを実行して、変数"F5OS_TOKEN"に値が格納されていることを確認します。
